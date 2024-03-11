@@ -11,6 +11,6 @@ public class HelloWorldController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     String helloWorld() {
-        return "Hello world!!!!";
+        return "Hello world!!!!!";
     }
 }
