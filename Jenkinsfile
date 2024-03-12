@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build .'
+                sh 'docker build -t vampire/spring-app:latest .'
+            }
+        }
+        stage('Push') {
+            steps {
+                sh 'docker push vampire/spring-app:latest'
             }
         }
     }
