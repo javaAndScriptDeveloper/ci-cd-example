@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Push') {
             steps {
-                sh 'docker push vampir/spring-app:latest'
+                sh 'docker login && docker push vampir/spring-app:latest'
             }
         }
     }
