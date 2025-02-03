@@ -1,6 +1,5 @@
 resource "aws_security_group" "allow_ssh_docker" {
   name_prefix = "allow_ssh_docker_"
-  id = "some_id"
   ingress {
     from_port   = 22
     to_port     = 22
