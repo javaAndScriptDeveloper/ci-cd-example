@@ -38,7 +38,7 @@ resource "aws_instance" "my_ec2" {
               sudo apt-get install -y docker.io
               sudo systemctl enable docker
               sudo systemctl start docker
-              sudo docker pull your-docker-image:latest
-              sudo docker run -d --name my_container your-docker-image:latest
+              sudo docker pull vampir/app
+              sudo docker run -d --name my_container vampir/app
               EOF
 }
