@@ -1,1 +1,1 @@
-# Example of CI-CD
+# Example of CI CD
